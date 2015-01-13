@@ -299,7 +299,7 @@ void ReadADTask (void const *argument)
 			if(stringtoreceive[2] == 'E') Led_State = 5;
 			RX_Clear();
 		}
-		else if(RX_Buffer[0] != '0') RX_Clear();
+		else if(RX_Buffer[1] != '1') RX_Clear();
 		osDelay(1000);
 	}
 }

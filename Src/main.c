@@ -157,7 +157,7 @@ while(1)
 void RX_Clear(void)
 {
 	DMA_InitTypeDef dma_2;
-	RX_Buffer[0] = 0;
+	RX_Buffer[1] = 0;
 	DMA_DeInit(DMA1_Channel6);
 	DMA_StructInit(&dma_2);
 	dma_2.DMA_PeripheralBaseAddr = (uint32_t)&(USART2->RDR);
